@@ -1,5 +1,5 @@
 name: "Test React avec un url"
-url: "http://localhost:3000#3"
+url: "http://localhost:3000#1"
 filter:
 - re.sub:
     pattern: t=\d+
@@ -10,7 +10,7 @@ kind: "url"
 ---
 
 name: "test React sans rien"
-url: "http://localhost:3000"
+url: "http://localhost:3000#2"
 filter:
 - re.sub:
     pattern: t=\d+
@@ -20,7 +20,7 @@ kind: "browser-js"
 ---
 
 name: "Test React avec un script"
-url: "http://localhost:3000#2"
+url: "http://localhost:3000#3"
 filter:
 - re.sub:
     pattern: t=\d+
