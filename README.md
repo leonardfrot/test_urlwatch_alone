@@ -1,4 +1,4 @@
-# urlwatch_alone
+# urlwatch_standalone
 ## Pré-requis
 Le site en React doit être allumé https://github.com/leonardfrot/test_scraping_frontend.
 Il est possible d'ajouter le site en Apache, il faut juste l'ajouter dans urls.yaml https://github.com/leonardfrot/test_ajax.
