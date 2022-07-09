@@ -1,21 +1,17 @@
-## urlwatch_standalone
-Ce projet était un test pour savoir si l'outil permettait de monitorer les sites modernes (SPA, AJAX).
-La réponse est que le module utilié Pyppeteer dans le job Browser fonctionne bien sur des sites JS classiques. Toutefois, il fonctionne pas pour les sites en React par exemple.
-De ce fait, le projet a été recyclé pour développer une nouvelle browser avec un autre outil Playwright.
+# urlwatch_alone
+## Pré-requis
+Le site en React doit être allumé https://github.com/leonardfrot/test_scraping_frontend.
+Il est possible d'ajouter le site en Apache, il faut juste l'ajouter dans urls.yaml https://github.com/leonardfrot/test_ajax.
+## Démarrer le monitoring
+`docker-compose up`
 
-## des tests déjà effectuées (ancien browser)
-il arrive à récupérer les changement à un site Apache localhost.
-il n'arrive pas sur le site préparé en React.
-Tous les waituntil ont été testés
-
-## des tests déjà effectuées (nouveau browser)
-Un sites en React a été monté.
-Deux jobs ont été créé sur ce site, un avec un bouton, l'autre sans.
-Il arrive à récupérer les changements sur les deux.
-
-Ensuite, il a été modifié pour passer un script, il peut être passé en mattant ; après chaque ligne. 
-
-## les commandes
-`urlwatch --urls urlwatch/urls.yaml --config urlwatch/urlwatch.yaml --hooks urlwatch/hooks.py`
-`urlwatch --gc-cache`
-"# test_urlwatch_alone" 
+## Fontion
+### Tester et entrainer la conteneurisation
+Comme Playwright devait être ajouté à Jestime, ce projet a aidé à trouver la bonne configuration Docker avec Playwright et Urlwatch.
+### Tester les browsers
+Ce projet a permis de tester le browser nativement intégré à Urlwatch avec Pyppeteer, mais également le nouveau avec Playwright
+#### Résultat browser natif
+- Il permet de récupérer la différence sur le site Apache.
+- Il ne permet pas de récupérer la différence sur le site en React.
+#### Résultat nouveau browser
+- Il permet de récupérer la différence sur le site Apache et React
