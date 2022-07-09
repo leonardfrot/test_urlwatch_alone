@@ -15,3 +15,6 @@ Ce projet a permis de tester le browser nativement intégré à Urlwatch avec Py
 - Il ne permet pas de récupérer la différence sur le site en React.
 #### Résultat nouveau browser
 - Il permet de récupérer la différence sur le site Apache et React
+## Synthèse
+Ce projet a permis de comprendre que le problème de l'outil venait de Pyppeteer. <br/>
+De ce fait, il fallait créer un nouveau browser avec Playwright.
