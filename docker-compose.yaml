@@ -1,0 +1,5 @@
+services:
+  urlwatch_container:
+    build:
+      context: ./
+      dockerfile: urlwatch/Dockerfile

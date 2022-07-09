@@ -1,0 +1,32 @@
+name: "Test React avec un url"
+url: "http://localhost:3000#3"
+filter:
+- re.sub:
+    pattern: t=\d+
+    repl: t=
+- html2text: pyhtml2text
+kind: "url"
+
+---
+
+name: "test React sans rien"
+url: "http://localhost:3000"
+filter:
+- re.sub:
+    pattern: t=\d+
+    repl: t=
+- html2text: pyhtml2text
+kind: "browser-js"
+---
+
+name: "Test React avec un script"
+url: "http://localhost:3000#2"
+filter:
+- re.sub:
+    pattern: t=\d+
+    repl: t=
+- html2text: pyhtml2text
+kind: "browser-js"
+script: "document.getElementById('toggle').click();var button = document.getElementById('toggle2');var clickEvent  = document.createEvent ('MouseEvents');clickEvent.initEvent ('dblclick', true, true);button.dispatchEvent(clickEvent);"
+
+

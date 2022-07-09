@@ -1,0 +1,6 @@
+html2text==2020.1.16
+keyrings.alt==3.4.0
+urlwatch==2.19
+pdftotext==2.2.2
+playwright==1.22.0
+

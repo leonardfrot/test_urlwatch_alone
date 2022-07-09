@@ -1,0 +1,1 @@
+urlwatch --urls urlwatch/urls.yaml --config urlwatch/urlwatch.yaml --hooks urlwatch/hooks.py
