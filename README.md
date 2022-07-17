@@ -5,11 +5,11 @@ Il est possible d'ajouter le site en Apache, il faut juste l'ajouter dans urls.y
 ## Démarrer le monitoring
 `docker-compose up`
 
-## Fontion
+## Fonctions
 ### Tester et entrainer la conteneurisation
 Comme Playwright devait être ajouté à Jestime, ce projet a aidé à trouver la bonne configuration Docker avec Playwright et Urlwatch.
 ### Tester les browsers
-Ce projet a permis de tester le browser nativement intégré à Urlwatch avec Pyppeteer, mais également le nouveau avec Playwright
+Ce projet a permis de tester le browser nativement intégré à Urlwatch avec Pyppeteer, mais également à développer le nouveau avec Playwright.
 #### Résultat browser natif
 - Il permet de récupérer la différence sur le site Apache.
 - Il ne permet pas de récupérer la différence sur le site en React.
